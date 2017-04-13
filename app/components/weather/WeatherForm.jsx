@@ -12,7 +12,7 @@ module.exports = React.createClass({
   render: function () {
     return (
         <form  onSubmit={this.onFormSubmit}>
-          <div><input ref="txtCity" type="text" placeholder="Enter city name"></input></div>
+          <div><input ref="txtCity" type="search" placeholder="Search weather by city.."></input></div>
           <div><button className="button hollow expanded">Get weather</button></div>
         </form>
     );
