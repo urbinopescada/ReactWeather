@@ -13,6 +13,11 @@ var Weather = require("Weather");
 var About = require("About");
 var Examples = require("Examples");
 
+//Load foundation using the css laoder (ie: css!) and inject the styles into our html, we do that chaining the loaders
+require('style!css!foundation-sites/dist/foundation.min.css')
+//Fire up foundation
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
@@ -23,4 +28,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById('app')
 );
- 
