@@ -12,9 +12,15 @@ var About = React.createClass({
 var About = (props) => {
     return (
         <div>
-            <h3>About</h3>
-            <p>Welcome to the about page!</p>
-        </div>
+            <h1 className="text-center">About</h1>
+            <p>Hello, my name is Urbino and I've build this ...</p>
+
+            <p>This are some of the tools used:</p>
+            <ul>
+              <li><a href="https://facebook.github.io/react">React</a></li>
+              <li><a href="http://openweathermap.org">Open Weather Map</a> - to look for temperatue at a given city.</li>
+            </ul>
+          </div>
     )
 };
 module.exports = About;
